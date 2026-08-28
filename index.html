@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de moedas</title>
+</head>
+
+<body>
+
+    <header>
+        <h2>Conversor de moedas</h2>
+        <p>Converta com facilidade os valores em Real, Dólar e Euro.</p>
+    </header>
+
+    <main>
+
+        <section>
+            <h2>Área de cálculo</h2>
+
+            <label for="valor">Valor:</label>
+            <input id="valor" name="valor" type="number" placeholder="Ex: 40.05" required>
+
+            <select id="moeda">
+                <option value="">Converter de:</option>
+                <option value="real">Real</option>
+                <option value="dolar">Dólar</option>
+                <option value="euro">Euro</option>
+            </select>
+
+            <select id="moeda2">
+                <option value="">Converter para:</option>
+                <option value="real">Real</option>
+                <option value="dolar">Dólar</option>
+                <option value="euro">Euro</option>
+            </select>
+
+            <button type="button" onclick="converter()">Converter</button>
+            <button type="button" onclick="limparCampos()">Limpar campos</button>
+        </section>
+
+        <section>
+            <h2>Resultado</h2>
+            <p id="resultado"></p>
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
