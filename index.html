@@ -5,48 +5,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Conversor de moedas</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bebas+Neue&family=Cinzel:wght@400..900&family=Cormorant:ital,wght@0,300..700;1,300..700&family=Epilogue:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lora:ital,wght@0,400..700;1,400..700&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Righteous&family=Sarala:wght@400;700&family=Sora:wght@100..800&family=Teko:wght@300..700&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
 
-    <header>
-        <h2>Conversor de moedas</h2>
-        <p>Converta com facilidade os valores em Real, Dólar e Euro.</p>
-    </header>
+    <div class="card">
+        <header>
+            <h2>Conversor de moedas</h2>
 
-    <main>
+            <p>Converta com facilidade os valores em Real, Dólar e Euro.</p>
+        </header>
 
-        <section>
-            <h2>Área de cálculo</h2>
+        <main>
 
-            <label for="valor">Valor:</label>
-            <input id="valor" name="valor" type="number" placeholder="Ex: 40.05" required>
+            <section>
+                <h2>Área de cálculo</h2>
 
-            <select id="moeda">
-                <option value="">Converter de:</option>
-                <option value="real">Real</option>
-                <option value="dolar">Dólar</option>
-                <option value="euro">Euro</option>
-            </select>
+                <label for="valor">Valor:</label>
+                <input id="valor" name="valor" type="number" placeholder="Ex: 40.05" required>
 
-            <select id="moeda2">
-                <option value="">Converter para:</option>
-                <option value="real">Real</option>
-                <option value="dolar">Dólar</option>
-                <option value="euro">Euro</option>
-            </select>
+                <select id="moeda">
+                    <option value="">Converter de:</option>
+                    <option value="real">Real</option>
+                    <option value="dolar">Dólar</option>
+                    <option value="euro">Euro</option>
+                </select>
 
-            <button type="button" onclick="converter()">Converter</button>
-            <button type="button" onclick="limparCampos()">Limpar campos</button>
-        </section>
+                <select id="moeda2">
+                    <option value="">Converter para:</option>
+                    <option value="real">Real</option>
+                    <option value="dolar">Dólar</option>
+                    <option value="euro">Euro</option>
+                </select>
 
-        <section>
-            <h2>Resultado</h2>
-            <p id="resultado"></p>
-        </section>
+                <button type="button" id="conversao">Converter</button>
+                <button type="reset" id="limpar">Limpar campos</button>
+            </section>
 
-    </main>
+            <section>
+                <h2>Resultado</h2>
+
+                <p id="resultado"></p>
+            </section>
+
+        </main>
+
+    </div>
 
     <script src="script.js"></script>
 </body>
